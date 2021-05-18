@@ -3,3 +3,5 @@
 # Please adapt and uncomment the following lines:
 	name = Jefferson Ye
 	email = forbesye@users.noreply.github.com
+[core]
+	editor = code --wait
