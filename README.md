@@ -24,6 +24,8 @@ This clones the repo, writes every dotfile, installs all Homebrew packages
 | `dot_fzf.zsh` | `~/.fzf.zsh` | |
 | `dot_gitconfig.tmpl` | `~/.gitconfig` | templated home path |
 | `dot_Brewfile` | `~/.Brewfile` | Homebrew package manifest |
+| `dot_claude/settings.json` | `~/.claude/settings.json` | Claude Code settings; rest of `~/.claude` is per-machine state and untracked |
+| `dot_claude/CLAUDE.md` | `~/.claude/CLAUDE.md` | global Claude Code instructions |
 | `dot_config/starship.toml` | `~/.config/starship.toml` | |
 | `dot_config/mise/config.toml` | `~/.config/mise/config.toml` | |
 | `dot_config/iterm2/private_com.googlecode.iterm2.plist` | `~/.config/iterm2/...` | see [iTerm2](#iterm2) |
