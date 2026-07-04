@@ -4,5 +4,9 @@
   },
   "model": "opus[1m]",
   "tui": "fullscreen",
-  "theme": "dark"
+  "theme": "dark",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
+  }
 }
