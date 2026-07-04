@@ -1,0 +1,17 @@
+#!/bin/bash
+set -euo pipefail
+
+# Install Homebrew if it isn't present (fresh machine)
+if ! command -v brew >/dev/null 2>&1; then
+  echo "==> Homebrew not found, installing..."
+  NONINTERACTIVE=1 /bin/bash -c \
+    "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+echo "==> Installing packages from ~/.Brewfile..."
+brew bundle --global
+
+# This script re-runs automatically whenever the Brewfile changes,
+# because its hash is embedded below (run_onchange_ tracks content).
+# Brewfile hash: {{ include "dot_Brewfile" | sha256sum }}

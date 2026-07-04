@@ -1,0 +1,16 @@
+# PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# mise — runtime version manager (activates node/python/ruby, etc.)
+eval "$(mise activate zsh)"
+
+# fzf — fuzzy finder: Ctrl-R history, Ctrl-T files, Alt-C cd
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source "/opt/homebrew/opt/fzf-tab/share/fzf-tab/fzf-tab.zsh"
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# starship prompt (keep last so it wraps everything)
+eval "$(starship init zsh)"

@@ -1,0 +1,44 @@
+# Homebrew package manifest — applied to ~/.Brewfile
+# Install/sync with: brew bundle --global
+# Managed by chezmoi. Add packages here, then `chezmoi apply` installs them.
+
+# --- CLI tools ---
+brew "awscli"
+brew "bitwarden-cli"
+brew "chezmoi"
+brew "fzf"
+brew "fzf-tab"
+brew "gh"
+brew "git"
+brew "glab"
+brew "htop"
+brew "jq"
+brew "libyaml"
+brew "mise"
+brew "neovim"
+brew "redis"
+brew "rename"
+brew "rlwrap"
+brew "starship"
+brew "tmux"
+brew "trash"
+brew "tree"
+
+# --- zsh plugins ---
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "zsh-you-should-use"
+
+# --- GUI apps (casks) ---
+cask "android-studio"
+cask "bitwarden"
+cask "brave-browser"
+cask "discord"
+cask "firefox"
+cask "flutter"
+cask "google-chrome"
+cask "iterm2"
+cask "protonvpn"
+cask "slack"
+cask "spotify"
+cask "visual-studio-code"
