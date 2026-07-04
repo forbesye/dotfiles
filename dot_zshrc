@@ -4,6 +4,11 @@ export PATH="$HOME/.local/bin:$PATH"
 # mise — runtime version manager (activates node/python/ruby, etc.)
 eval "$(mise activate zsh)"
 
+# completion system — must run before fzf-tab / any completion plugin
+autoload -Uz compinit && compinit
+# case-insensitive completion (macOS FS is case-insensitive): lowercase→any-case
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
 # fzf — fuzzy finder: Ctrl-R history, Ctrl-T files, Alt-C cd
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
